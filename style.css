@@ -1,0 +1,45 @@
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  box-sizing: inherit;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: background;
+}
+
+button {
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  font-family: monospace;
+  background-color: white;
+  border: 5px solid #333;
+  border-radius: 2px;
+}
+
+.button--night {
+  border: 5px solid snow;
+  background-color: #333;
+  color: snow;
+  box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow;
+}
+
+.body--night {
+  background-color: #333;
+}
